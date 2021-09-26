@@ -11,8 +11,10 @@ color: rgb(219, 97, 27);} */
 #banner{
     height: 150px;
     border-radius: 3px;
-    background: rgb(185, 38, 38);
+    background: rgb(252, 251, 250);
     overflow:hidden;
+    background-image: url(img/degrade.jpg);
+
 }
 
 
@@ -20,7 +22,8 @@ color: rgb(219, 97, 27);} */
 /* menu >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> Funciona*/
 #menu{
     height: 50px;
-    background: rgb(142, 156, 192);
+    background: rgb(213, 184, 230);
+
   
     
 
@@ -28,7 +31,7 @@ color: rgb(219, 97, 27);} */
 }
 #menu li a:hover, #menu li a:active { 
         /*background-color : rgb(151, 72, 230);*/
-        border-top: 5px solid rgb(4, 25, 121);
+        border-top: 5px solid rgb(148, 204, 218);
         }
 
 
@@ -53,32 +56,35 @@ color: rgb(219, 97, 27);} */
 
 #container{
     width: 980px; /* tamanho total do site comprimento*/
-    min-height: 960px; /* tamanho total do site altura */
+    min-height: auto; /* tamanho total do site altura */
     border-radius: 3px;
     margin-left: auto;
     margin-right: auto;
     margin-top: 10px; /* margem do topo*/
     margin-bottom: 10px; /* margem do rodape */
-    background: rgb(190, 60, 60); /* cor de fundo */
+    background: rgb(252, 250, 250); /* cor de fundo */
+
     }
  
 /*estrutura do site .................... ver */
 #corpo{
     min-height: 700px;
     width: 980px;
-    background: rgb(253, 253, 253);
+    background: rgb(254, 255, 254);
     margin-left: 0px; /* corpo central do site sem pegar o menu e rodape */
+
 }
 
 
 /* Elemento de tag <body> */
 body{
-    background: #714c96; /* fundo do site  ok deixar*/ 
-    font-family: sans-serif;
+    background:  rgb(255,215,0); /* fundo do site  ok deixar*/ 
+    font-family: arial;
     font-size: 1em;  /* tamado de todas as fontes do corpo do site ok deixar */
-    color: #66a887; /* cor das letras H2 DEIXAR OU INCLUIR NA TAG H2*/
+    color: rgb(0, 0, 0); /* cor das letras H2 DEIXAR OU INCLUIR NA TAG H2*/
     font-weight: bold; /* negrito */
     justify-content: center; /* não fez nada no site */ 
+    background-image: url(img/degrade.jpg);
 }
 
 
@@ -93,7 +99,7 @@ fieldset {
 form{
     margin-left: 80px;
     margin-top: auto;
-    border-color: #070607;
+    border-color: rgb(0, 0, 0);
     /*border-style:solid;
     border-radius: 20px; 
     margin-right: 80px; */
@@ -109,15 +115,15 @@ fieldset.grupo .campo {
 
 /* Edição dos elementos de tags <body>, <input>, <Select>, e <button> >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> Funciona */
 input, select, button {
-    font-family: sans-serif;
+    font-family: arial;
     font-size: 1em;
-    color: #b61774;
+    color: rgb(0, 0, 0);
     border-radius: 5px;
 }
 
 /* ao selecionar campo muda a cor >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> Funciona*/
 .campo input:focus, .campo select:focus, .campo textarea:focus {
-    background: #f0edf3;
+    background: #ece0f8;
 }
 
 /* cria espaçamento para os campos >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> Funciona*/
@@ -130,7 +136,7 @@ input, select, button {
 /* edica campos / pula linha >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> Funciona */
 .campo label {
     margin-bottom: 0.2em;
-    color: #6ea11a; /* cor das palavras da label */
+    color: rgb(0, 0, 0); /* cor das palavras da label */
     display: block;
 }
 
@@ -139,7 +145,7 @@ input, select, button {
 /* botão enviar do formulário >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> Funciona */
 .botao {
     font-size: 1.2em;
-    background: #59429d;
+    background: rgb(148, 204, 218);
     border: 0;
     margin-bottom: 1em;
     color: #ffffff;
@@ -165,27 +171,24 @@ input, select, button {
     cursor: pointer;
 }
 
-
+.flavia{
+    float:left;
+    padding: 15px;
+    }
+p{
+        font-family: arial;
+        font-size: 12pt;
+        color: rgb(0, 0, 0);
+        }
 
 
 /* rodape >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> Funciona */
 #rodape{
-    height: 60px;
-    background: rgb(164, 181, 224);
+    height: 40px;
+    background: rgb(148, 204, 218);
     border-radius: 3px;
 }
-
-
-
-
-/* Elementos de classe "grupo" nos estados das pseudoclasses "before" e "after"
-.grupo:before, .grupo:after {
-    display:table;
-}
-
-
-
-
+    
 
 
 

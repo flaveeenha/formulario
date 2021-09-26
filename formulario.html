@@ -12,13 +12,11 @@
 <body>
     <div id="container">
 
-        <div id="banner"><img src="img/banner_covid.jpg"></div>
+        <!-- <div id="banner"></div> -->
 
         <div id="menu">
-            <li><a href="index.html">Home</a></li>
+            <li><a href="formulario.html">Formulário</a></li>
             <li><a href="sobre.html">Sobre</a></li>
-            <li><a href="contato.html">Contato</a></li>
-            <li><a href="saiba_mais.html">Saiba mais</a></li>
         </div>
 
         <div id="corpo">
@@ -37,7 +35,7 @@
                     </div>
                     <div class="campo">
                         <label for="nome">Sobrenome<abbr title="campo obrigatório">*</abbr></label>
-                        <input type="text" size="40" name="nome" id="nome" placeholder="digite seu sobrenome" required>
+                        <input type="text" size="40" name="sobrenome" id="sobrenome" placeholder="digite seu sobrenome" required>
                     </div>
                 </fieldset>
 
@@ -144,7 +142,7 @@
                 <!-- Botão para enviar o formulário-->
                 <div>
                     <button class="botao" type="submit"
-                        onclick="alert('Formulário enviado com sucesso!')">Enviar</button>
+                        onclick="enviar()">Enviar</button>
                 </div>
             </form>
         </div>
@@ -152,7 +150,7 @@
 
         <div id="rodape">
             <center>
-                <font face="arial" color="#000000"><br><i>2020 - Todos os direitos reservados</i></font>
+                <font face="arial" color="#000000"><br><i>2021 - Formulário</i></font>
             </center>
         </div>
     </div>
