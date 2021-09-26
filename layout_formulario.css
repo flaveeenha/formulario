@@ -1,0 +1,193 @@
+ /* *{background: rgb(119, 116, 116);} */
+*{margin: 0px; padding: 0px;}
+
+
+
+/*p
+{text-align: right;
+color: rgb(219, 97, 27);} */
+
+/* banner >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> Funciona*/
+#banner{
+    height: 150px;
+    border-radius: 3px;
+    background: rgb(185, 38, 38);
+    overflow:hidden;
+}
+
+
+
+/* menu >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> Funciona*/
+#menu{
+    height: 50px;
+    background: rgb(142, 156, 192);
+  
+    
+
+/* menu quando passa o mouse muda >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> Funciona*/   
+}
+#menu li a:hover, #menu li a:active { 
+        /*background-color : rgb(151, 72, 230);*/
+        border-top: 5px solid rgb(4, 25, 121);
+        }
+
+
+/* menu quando clica o mouse muda* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> Funciona */ 
+#menu li a,  #menu li a:hover, #menu li a:active{ 
+            display: block;
+            text-decoration: none; 
+            color: #070607;
+            text-align: center;
+            font-weight: bold;
+            font-size: 17px;
+            font-family: arial;           
+}
+
+/* posição do menu >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> Funciona*/
+#menu li{
+    display: flex;
+    float:left;
+    margin: 13px 90px 0px 90px;
+}
+
+
+#container{
+    width: 980px; /* tamanho total do site comprimento*/
+    min-height: 960px; /* tamanho total do site altura */
+    border-radius: 3px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px; /* margem do topo*/
+    margin-bottom: 10px; /* margem do rodape */
+    background: rgb(190, 60, 60); /* cor de fundo */
+    }
+ 
+/*estrutura do site .................... ver */
+#corpo{
+    min-height: 700px;
+    width: 980px;
+    background: rgb(253, 253, 253);
+    margin-left: 0px; /* corpo central do site sem pegar o menu e rodape */
+}
+
+
+/* Elemento de tag <body> */
+body{
+    background: #714c96; /* fundo do site  ok deixar*/ 
+    font-family: sans-serif;
+    font-size: 1em;  /* tamado de todas as fontes do corpo do site ok deixar */
+    color: #66a887; /* cor das letras H2 DEIXAR OU INCLUIR NA TAG H2*/
+    font-weight: bold; /* negrito */
+    justify-content: center; /* não fez nada no site */ 
+}
+
+
+
+/* Zera linha dos fildsets >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> Funciona*/
+fieldset {
+    border: 0;
+}
+
+
+/* centralizador do formulário >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> Funciona */
+form{
+    margin-left: 80px;
+    margin-top: auto;
+    border-color: #070607;
+    /*border-style:solid;
+    border-radius: 20px; 
+    margin-right: 80px; */
+}
+
+/* cria espaço lateral e coloca ao lado para o fildset >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> Funciona */
+fieldset.grupo .campo {
+    float:  left;
+    margin-right: 1em;
+}
+
+
+
+/* Edição dos elementos de tags <body>, <input>, <Select>, e <button> >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> Funciona */
+input, select, button {
+    font-family: sans-serif;
+    font-size: 1em;
+    color: #b61774;
+    border-radius: 5px;
+}
+
+/* ao selecionar campo muda a cor >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> Funciona*/
+.campo input:focus, .campo select:focus, .campo textarea:focus {
+    background: #f0edf3;
+}
+
+/* cria espaçamento para os campos >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> Funciona*/
+.campo {
+    margin-bottom: 1em;
+}
+
+
+
+/* edica campos / pula linha >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> Funciona */
+.campo label {
+    margin-bottom: 0.2em;
+    color: #6ea11a; /* cor das palavras da label */
+    display: block;
+}
+
+
+
+/* botão enviar do formulário >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> Funciona */
+.botao {
+    font-size: 1.2em;
+    background: #59429d;
+    border: 0;
+    margin-bottom: 1em;
+    color: #ffffff;
+    padding: 0.2em 0.6em;
+    box-shadow: 2px 2px 2px rgba(0,0,0,0.2);
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
+    position: absolute;
+    top: 150%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%)
+}
+
+/* Elemento de classe "botao" com o estado da pseudoclasse "hover" >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> Funciona */
+.botao:hover {
+    background: #CCBBFF;
+    box-shadow: inset 2px 2px 2px rgba(0,0,0,0.2);
+    text-shadow: none;
+}
+
+/* Elementos de classe botão e de tag <select>  >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> Funciona */
+.botao, select{
+    cursor: pointer;
+}
+
+
+
+
+/* rodape >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> Funciona */
+#rodape{
+    height: 60px;
+    background: rgb(164, 181, 224);
+    border-radius: 3px;
+}
+
+
+
+
+/* Elementos de classe "grupo" nos estados das pseudoclasses "before" e "after"
+.grupo:before, .grupo:after {
+    display:table;
+}
+
+
+
+
+
+
+
+
+
