@@ -1,13 +1,8 @@
- /* *{background: rgb(119, 116, 116);} */
+
 *{margin: 0px; padding: 0px;}
 
 
-
-/*p
-{text-align: right;
-color: rgb(219, 97, 27);} */
-
-/* banner >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> Funciona*/
+/* banner */
 #banner{
     height: 150px;
     border-radius: 3px;
@@ -17,103 +12,108 @@ color: rgb(219, 97, 27);} */
 
 }
 
-
-
-/* menu >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> Funciona*/
+/* configuração do menu */
 #menu{
-    height: 50px;
-    background: rgb(213, 184, 230);
-
-  
-    
-
-/* menu quando passa o mouse muda >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> Funciona*/   
+    height: 40px;
+    background: rgb(229, 206, 241);
+    box-shadow: 0 2px 18px 0 rgb(129 162 182 / 20%);
+    box-sizing: border-box;
+    flex-direction: row;    
+    justify-content: space-between;
+    padding: 0 48px;
+    position: relative;
 }
+
+/* menu cor ao passar mouse */ 
 #menu li a:hover, #menu li a:active { 
-        /*background-color : rgb(151, 72, 230);*/
-        border-top: 5px solid rgb(148, 204, 218);
-        }
-
-
-/* menu quando clica o mouse muda* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> Funciona */ 
-#menu li a,  #menu li a:hover, #menu li a:active{ 
-            display: block;
-            text-decoration: none; 
-            color: #070607;
-            text-align: center;
-            font-weight: bold;
-            font-size: 17px;
-            font-family: arial;           
+    border-top: 5px solid rgb(148, 204, 218);
 }
 
-/* posição do menu >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> Funciona*/
+/*configuração di menu li */ 
+#menu li a,  #menu li a:hover, #menu li a:active{ 
+    display: block;
+    text-decoration: none; 
+    color: #070607;
+    text-align: center;
+    font-weight: bold;
+    font-size: 17px;
+    font-family: arial;           
+}
+
+/* posição do menu */
 #menu li{
     display: flex;
-    float:left;
-    margin: 13px 90px 0px 90px;
+    margin: 10px 2px 2px 10px;
 }
 
+/* posição do menu */
+#menu ul{
+    display: flex;
+    flex-direction: row;
+}
 
-#container{
-    width: 980px; /* tamanho total do site comprimento*/
-    min-height: auto; /* tamanho total do site altura */
-    border-radius: 3px;
+/* posição do menu */
+#itens{
+    flex-direction: row;
+    float: left;
+    display: flex;
+    text-align: left;
+}
+
+/* posição do menu */
+#contatos{
+    flex-direction: row;
+    float: right;
+    display: flex;
+    text-align: right;
+}
+
+/*estrutura do site */
+#corpo{
+    min-height: 100%;
+    width: 80%;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 10px; /* margem do topo*/
-    margin-bottom: 10px; /* margem do rodape */
-    background: rgb(252, 250, 250); /* cor de fundo */
-
-    }
- 
-/*estrutura do site .................... ver */
-#corpo{
-    min-height: 700px;
-    width: 980px;
-    background: rgb(254, 255, 254);
-    margin-left: 0px; /* corpo central do site sem pegar o menu e rodape */
-
 }
 
-
-/* Elemento de tag <body> */
+/* Corpo */
 body{
-    background:  rgb(255,215,0); /* fundo do site  ok deixar*/ 
+    width:100%;
+    height: 100%;
+    background:  rgb(255,215,0); 
     font-family: arial;
-    font-size: 1em;  /* tamado de todas as fontes do corpo do site ok deixar */
-    color: rgb(0, 0, 0); /* cor das letras H2 DEIXAR OU INCLUIR NA TAG H2*/
-    font-weight: bold; /* negrito */
-    justify-content: center; /* não fez nada no site */ 
+    font-size: 1em;  
+    color: rgb(0, 0, 0); 
+    font-weight: bold; 
+    padding: 10px;
     background-image: url(img/degrade.jpg);
+  
 }
 
-
-
-/* Zera linha dos fildsets >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> Funciona*/
+/* Zera linha dos fildsets (formulários) */
 fieldset {
     border: 0;
 }
 
-
-/* centralizador do formulário >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> Funciona */
+/* configuração do formulário */
 form{
-    margin-left: 80px;
+    width: 60%;
     margin-top: auto;
     border-color: rgb(0, 0, 0);
-    /*border-style:solid;
-    border-radius: 20px; 
-    margin-right: 80px; */
+    background: rgb(254, 255, 254);
+    border-bottom-right-radius: 50px;
+    padding: 50px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-/* cria espaço lateral e coloca ao lado para o fildset >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> Funciona */
+/* cria espaço lateral e coloca ao lado para o fildset */
 fieldset.grupo .campo {
     float:  left;
     margin-right: 1em;
 }
 
-
-
-/* Edição dos elementos de tags <body>, <input>, <Select>, e <button> >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> Funciona */
+/* Edição dos elementos */
 input, select, button {
     font-family: arial;
     font-size: 1em;
@@ -121,72 +121,82 @@ input, select, button {
     border-radius: 5px;
 }
 
-/* ao selecionar campo muda a cor >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> Funciona*/
+/* ao passar mouse campo muda a cor */
 .campo input:focus, .campo select:focus, .campo textarea:focus {
     background: #ece0f8;
 }
 
-/* cria espaçamento para os campos >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> Funciona*/
+/* cria espaçamento para os campos */
 .campo {
     margin-bottom: 1em;
 }
 
-
-
-/* edica campos / pula linha >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> Funciona */
+/* edica campos / pula linha */
 .campo label {
     margin-bottom: 0.2em;
     color: rgb(0, 0, 0); /* cor das palavras da label */
     display: block;
 }
 
-
-
-/* botão enviar do formulário >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> Funciona */
+/* botão enviar do formulário */
 .botao {
     font-size: 1.2em;
     background: rgb(148, 204, 218);
     border: 0;
-    margin-bottom: 1em;
     color: #ffffff;
     padding: 0.2em 0.6em;
     box-shadow: 2px 2px 2px rgba(0,0,0,0.2);
     text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
-    position: absolute;
-    top: 150%;
-    left: 50%;
-    margin-right: -50%;
-    transform: translate(-50%, -50%)
+    position: relative;
+    float: left;
+    margin-right: 10px;
 }
 
-/* Elemento de classe "botao" com o estado da pseudoclasse "hover" >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> Funciona */
+/* Elemento de classe botao com o estado "hover" */
 .botao:hover {
     background: #CCBBFF;
     box-shadow: inset 2px 2px 2px rgba(0,0,0,0.2);
     text-shadow: none;
 }
 
-/* Elementos de classe botão e de tag <select>  >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> Funciona */
+/* muda cursor para botão e select*/
 .botao, select{
     cursor: pointer;
 }
 
+/* Pagina sobre - edição - Imagem */
 .flavia{
     float:left;
     padding: 15px;
-    }
+}
+
+/* Pagina sobre - Configuração do texto */
 p{
-        font-family: arial;
-        font-size: 12pt;
-        color: rgb(0, 0, 0);
-        }
+    font-family: arial;
+    font-size: 12pt;
+    color: rgb(0, 0, 0);
+}
 
-
-/* rodape >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> Funciona */
+/* Pagina sobre - configuração da estrutura */
+#sobre{
+    width: 60%;
+    margin-top: auto;
+    border-color: rgb(0, 0, 0);
+    background: rgb(254, 255, 254);
+    border-bottom-right-radius: 50px;
+    padding: 50px;
+    margin-left: auto;
+    margin-right: auto;
+        
+}
+ 
+ /* rodape */
 #rodape{
     height: 40px;
-    background: rgb(148, 204, 218);
+    background: rgb(164, 223, 238);
     border-radius: 3px;
+    bottom:0;
+    width:100%;
 }
     
 
